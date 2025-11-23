@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	client, err := rpc.Dial("tcp", "127.0.0.1:1234")
+	client, err := rpc.Dial("tcp", "server:1234")
 
 	if err != nil {
 		fmt.Println("Error connecting to server:", err)

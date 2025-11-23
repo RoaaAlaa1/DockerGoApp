@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: chat-server
+    ports:
+      - "1234:1234"
+
+  client:
+    build:
+      context: .
+      dockerfile: Dockerfile.client
+    container_name: chat-client
+    depends_on:
+      - server
+    tty: true
+    stdin_open: true

@@ -22,7 +22,7 @@ func main() {
 	server := new(ChatService)
 	rpc.Register(server)
 
-	listener, err := net.Listen("tcp", "127.0.0.1:1234")
+	listener, err := net.Listen("tcp", "0.0.0.0:1234")
 	if err != nil {
 		fmt.Println("Error starting server:", err)
 		return

@@ -33,15 +33,20 @@ The server handles incoming RPC messages and stores chat history, while the clie
 
 ## 🐳 Docker Files:
 
-### **Server Dockerfile**
+### **Server Dockerfile:**
+-Builds a Docker image for the server
+-Installing dependencies
+-Setting up the environment
+-Running the server inside a container.
 
 ## **Docker Hub Image Link:**
 >> https://hub.docker.com/r/roaaalaa1/chatroom-server
 
-### To run this project:
-## 1. Run the server from Docker Hub above:
+## To run this project:
+### 1. Run the server from Docker Hub above:
+docker pull username/rpc-chat-server:new
 docker run -p 1234:1234 roo/chatroom-server:latest
 
-## 2. Run client:
+### 2. Run client:
 go run client.go
 

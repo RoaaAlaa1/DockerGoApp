@@ -11,7 +11,6 @@ The server handles incoming RPC messages and stores chat history, while the clie
 ├── server.go
 ├── client.go
 ├── Dockerfile (server)
-├── Dockerfile.client (client)
 └── README.md
 
 
